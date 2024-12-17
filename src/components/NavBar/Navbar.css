@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+
+li, a
+{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    cursor: pointer;
+    height: 50px;
+}
+
+.navlinks{
+    list-style: none;
+    position: relative;
+    display: flex;
+    gap: 20px; /* Spacing between sections */
+    padding: 6px 10px;
+    border: 2px solid #edf0f1;
+    border-radius: 50px;
+    border-width: 1px;
+    overflow: hidden; /* Ensures the oval stays within bounds */
+}
+
+.navlinks li {
+    display:inline-block; /* make the list on nav bar side by side */
+    padding: 0px 20px;  /* Space between the list (top and left) */
+   cursor: pointer;
+   flex: 1;
+}
+
+
+
+.navlinks li a {
+    position: relative; /* Keep text above the hover effect */
+    z-index: 2; /* Ensures text stays above the hover background */
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #edf0f1;
+
+}
+
+.navlinks li a:hover{
+    position: relative; /* Keep text above the hover effect */
+    z-index: 2; /* Ensures text stays above the hover background */
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #FFFB7D;
+    background-image: linear-gradient(45deg, #FFFB7D 0%, #85FFBD 100%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+button:hover {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+button a {
+    color: black;
+}
+
+.hover-oval {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 100%;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 38%, #FFFB7D 100%);
+    border-radius: 50px;
+    transition: all 0.3s ease; /* Smooth animation */
+    z-index: 1; /* Places the oval below the text */
+    color: black
+}
+.oval {
+    background-color: rgb(23, 22, 22);
+    border-radius: 50px;
+    border-width: 1px;
+}
+

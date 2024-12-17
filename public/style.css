@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0; /* remove margins*/
+    padding: 0; /* remove padding*/
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(30, 30, 30); /* default backgrounc colour*/
+    color: white; /* default colour*/
+    overflow: hidden;
+    overflow-y: scroll;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
