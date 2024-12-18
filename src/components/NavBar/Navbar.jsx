@@ -1,5 +1,6 @@
 import "./Navbar.css";
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo.png";
+import resumepdf from "../../assets/example.pdf"
 import React, { useRef, useState } from "react";
 
 const Navbar = () => {
@@ -18,13 +19,13 @@ const Navbar = () => {
         getComputedStyle(navRef.current).paddingRight
       );
       setHoverPosition({
-        width: rect.width,
-        left: rect.left - navRect.left - navPaddingLeft,
+        width: rect.width + 20,
+        left: rect.left - navRect.left - navPaddingLeft - 1,
       });
     }
   };
   const handleMouseOut = (e) => {
-    setHoverPosition({ width: 0, left: 0 });
+    setHoverPosition({ width: 145, left: 0 });
   };
 
   return (
@@ -45,11 +46,18 @@ const Navbar = () => {
               }}
             />
             <li onMouseOver={handleMouseOver}>
+              <a href="#">Home</a>
+            </li>
+            <li onMouseOver={handleMouseOver}>
               <a href="#">About</a>
+            </li>
+            <li onMouseOver={handleMouseOver}>
+              <a href="#">Skills</a>
             </li>
             <li onMouseOver={handleMouseOver}>
               <a href="#">Projects</a>
             </li>
+
             <li onMouseOver={handleMouseOver}>
               <a href="#">Contact</a>
             </li>
@@ -57,7 +65,7 @@ const Navbar = () => {
         </nav>
       </div>
       <button>
-        <a href="#" className="resume">
+        <a href={resumepdf} download className="resume">
           Resume
         </a>
       </button>

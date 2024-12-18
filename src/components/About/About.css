@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+
+
+.containerAbout{
+    flex: 1;
+    background-color: transparent;
+    height: 500px;
+    width: 1200px;
+    margin: 100px 150px;
+    padding: 10%;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+}
+
+
+.containerAbout h1{
+    text-align: center;
+    
+}
+
+.containerAbout p{
+    transform: translateY(30px);
+    text-align: center;
+    color: gray;
+}
+
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0),rgb(65  , 65, 65));
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(65, 65, 65));
+  }
+
+.logos{
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap ;
+    position: relative;
+
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 25s slide infinite linear;
+}
+
+.logos-slide img{
+    height: 75px;
+    margin: 0 40px;
+    width: 75px;
+}
+
+.videoGameText
+{
+    background: #00FF00;
+    background: linear-gradient(to left, #00FF00 0%, #00FFFF 100%);
+}
+@keyframes slide {
+    from{
+       transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+
