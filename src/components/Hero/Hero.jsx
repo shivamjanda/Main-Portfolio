@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+
 import ProfilePicture from "../../assets/profilepicture.PNG";
 
 const Hero = () => {
@@ -10,8 +11,7 @@ const Hero = () => {
         <p class>Full Stack Software Developer</p>
       </div>
       <div className="imageSection">
-        <img src={ProfilePicture} alt="logo"/>
-        
+        <img src={ProfilePicture} alt="logo" />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
-import resumepdf from "../../assets/example.pdf"
+import resumepdf from "../../assets/example.pdf";
 import React, { useRef, useState } from "react";
 
 const Navbar = () => {
@@ -46,7 +46,7 @@ const Navbar = () => {
               }}
             />
             <li onMouseOver={handleMouseOver}>
-              <a href="#">Home</a>
+              <a href="">Home</a>
             </li>
             <li onMouseOver={handleMouseOver}>
               <a href="#">About</a>

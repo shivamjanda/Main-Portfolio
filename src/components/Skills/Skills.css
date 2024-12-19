@@ -4,10 +4,10 @@
   padding: 0;
 }
 
-.twoColumns{
-    padding: 90px 0px ;
-    display: flex;
-    margin-top: -170px;
+.twoColumns {
+  padding: 90px 0px;
+  display: flex;
+  margin-top: -170px;
 }
 
 .skillSet {
@@ -24,15 +24,13 @@
   padding: -5%;
 }
 
-
 .skillSet p {
-    padding: 4%;
-    text-align: center;
-    color: gray;
-  }
-  
+  padding: 4%;
+  text-align: center;
+  color: gray;
+}
+
 .skillsButton {
-    
   transform: translateX(710px);
   background-color: #fffb7d;
   background-image: linear-gradient(45deg, #fffb7d 0%, #85ffbd 100%);
@@ -40,54 +38,48 @@
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3 ease 0s;
-  
 }
 
-.textSection{
-    flex: 1;
-    height: 400px;
-    align-content: center;
-    padding: 0 10%;
+.textSection {
+  flex: 1;
+  height: 600px;
+  align-content: center;
+  padding: 0 10%;
 }
 
-.skillsImageSection{
-    flex: 1;
-    height: 400px;
- }
+.skillsImageSection {
+  flex: 1;
+  height: 600px;
+}
 
+.textSection h1 {
+  position: relative;
+  right: -5%;
+  display: inline-block;
+  font-size: 20px;
+  animation: 1.3s fade-down;
+}
 
- .textSection  h1{
-    position: relative ;
-    right: -5%;
-    display: inline-block;
-    font-size: 20px;
-    animation: 1.3s fade-down;
- }
+.textSection P {
+  position: relative;
+  line-height: 2.5;
+  right: -7%;
+  font-size: 15px;
+  color: gray;
+  text-align: left;
+  animation: 2s fade-down;
+}
+.imgLaptopMobile {
+  float: left;
+}
 
- .textSection P {
-    position: relative ;
-    line-height: 2.5;
-    right: -7%;
-    font-size: 15px;
-    color: gray;
-    text-align: left;
-    animation: 2s fade-down;
-    
- }
- .imgLaptopMobile{
-    float: left;
-    
- }
-
- @keyframes fade-down {
-    0% {
-      transform: translateY(-30px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0px);
-      opacity: 1;
-    }
+@keyframes fade-down {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
   }
-
-  
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
